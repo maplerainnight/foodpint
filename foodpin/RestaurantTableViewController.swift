@@ -59,6 +59,7 @@ class RestaurantTableViewController: UITableViewController {
         
         //cell.accessoryType = restaurantIsVisited[indexPath.row] ? .checkmark : .none
         
+        //避免cell顯示上一次的結果
         if restaurantIsVisited[indexPath.row]{
             cell.heartImageView.image = UIImage(named: "heart-tick")
         }else{
