@@ -129,20 +129,12 @@ class RestaurantTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == .delete{
             //從資料源刪除
-            restaurantNames.remove(at:indexPath.row)
-            restaurantLocations.remove(at:indexPath.row)
-            restaurantTypes.remove(at:indexPath.row)
-            restaurantIsVisited.remove(at:indexPath.row)
-            restaurantImages.remove(at:indexPath.row)
+            restaurants.remove(at:indexPath.row)
         }
         
         tableView.deleteRows(at:[indexPath],with:.fade)
         //tableView.reloadData()
         
-        print("Total item: \(restaurantNames.count)")
-        for name in restaurantNames{
-            print(name)
-        }
     }
     //向左滑動
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -247,10 +239,7 @@ class RestaurantTableViewController: UITableViewController {
         if segue.identifier == "showRestaurantDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! RestaurantDetailViewController
-                destinationController.restaurantImageName = restaurantImages[indexPath.row]
-                destinationController.restaurantNameName = restaurantNames[indexPath.row]
-                destinationController.restaurantTypeName = restaurantTypes[indexPath.row]
-                destinationController.restaurantLocationName = restaurantLocations[indexPath.row]
+                destinationController.restaurant = restaurants[indexPath.row]
             }
         }
     }
