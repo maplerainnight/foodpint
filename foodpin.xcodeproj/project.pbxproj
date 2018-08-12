@@ -13,6 +13,7 @@
 		AF232D6A210A9D7E00EFADB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF232D68210A9D7E00EFADB2 /* LaunchScreen.storyboard */; };
 		AF232D72210AA4F000EFADB2 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF232D71210AA4F000EFADB2 /* RestaurantTableViewController.swift */; };
 		AF232D74210CB75F00EFADB2 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF232D73210CB75F00EFADB2 /* RestaurantTableViewCell.swift */; };
+		AFAB6D6E2120291C00CFFC02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB6D6D2120291C00CFFC02 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AF232D6B210A9D7F00EFADB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF232D71210AA4F000EFADB2 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		AF232D73210CB75F00EFADB2 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		AFAB6D6D2120291C00CFFC02 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AF232D6B210A9D7F00EFADB2 /* Info.plist */,
 				AF232D71210AA4F000EFADB2 /* RestaurantTableViewController.swift */,
 				AF232D73210CB75F00EFADB2 /* RestaurantTableViewCell.swift */,
+				AFAB6D6D2120291C00CFFC02 /* Restaurant.swift */,
 			);
 			path = foodpin;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAB6D6E2120291C00CFFC02 /* Restaurant.swift in Sources */,
 				AF232D72210AA4F000EFADB2 /* RestaurantTableViewController.swift in Sources */,
 				AF232D74210CB75F00EFADB2 /* RestaurantTableViewCell.swift in Sources */,
 				AF232D60210A9D7A00EFADB2 /* AppDelegate.swift in Sources */,
